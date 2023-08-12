@@ -1,0 +1,8 @@
+FROM php:latest
+
+EXPOSE 8002
+COPY ./code /usr/src/code
+WORKDIR /usr/src/code/official
+
+RUN docker-php-ext-install pdo pdo_mysql
+CMD [ "php", "artisan", "serve", "--host=0.0.0.0" ]

@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+*.local
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+<<<<<<< HEAD
+.hbuilderx/
+coverage/
+
+.hbuilderx/
+=======
+
+coverage/
+>>>>>>> 530f18a (1. added sass plugins.)
+=======
+.hbuilderx
+>>>>>>> 38a5fff (Added: Foundational)
