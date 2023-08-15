@@ -1,0 +1,8 @@
+<!--pages/user/index.wxml-->
+<view class="container">
+    <view class="contact">
+        <view class="title">预定成功</view>
+        <image class="qrcode" src="" mode="center"></image>
+    </view>
+    <view class="txt">恭喜，您已成功预定 ""，请长按二维码添加客服</view>
+</view>

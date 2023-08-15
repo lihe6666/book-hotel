@@ -1,0 +1,44 @@
+/* pages/contact.wxss */
+
+page {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.form label {
+    width: 20%;
+    color: #333;
+
+
+    font-size: 14px;
+}
+
+.form input {
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+
+    font-size: 14px;
+}
+
+.name-wrapper, .date-wrapper, .cost-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0 0 15px 0;
+}
+
+.remark-wrapper textarea {
+    padding: 5px;
+    border-bottom: 1px solid #dedede;
+
+    font-size: 14px;
+}

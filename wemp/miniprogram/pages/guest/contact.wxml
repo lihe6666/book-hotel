@@ -1,0 +1,21 @@
+<!--pages/contact.wxml-->
+<view class="container">
+    <view class="form">
+        <view class="name-wrapper">
+            <label for="name">姓名:</label>
+            <input id="name" type="text" placeholder="请输入姓名" bindinput="onInputAction" data-key="name" />
+        </view>
+        <view class="date-wrapper">
+            <label for="date">日期:</label>
+            <input id="date" type="text" placeholder="请选择日期" bindinput="onInputAction" data-key="date" />
+        </view>
+        <view class="cost-wrapper">
+            <label for="cost">价格:</label>
+            <input id="cost" type="text" placeholder="请选择价格" bindinput="onInputAction" data-key="cost" />
+        </view>
+        <view class="remark-wrapper">
+            <textarea id="remark" name="remark" placeholder="请输入备注" bindinput="onInputAction" data-key="remark"></textarea>
+        </view>
+    </view>
+    <button type="primary" bindtap="onSaveAction">预定</button>
+</view>
