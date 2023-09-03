@@ -8,7 +8,11 @@ Page({
         name: '',
         date: '',
         cost: '',
-        remark: ''
+        remark: '',
+        autosize: {
+          maxHeight: 120,
+          minHeight: 20,
+        },
     },
 
     /**
@@ -85,5 +89,9 @@ Page({
                 })
             }
         }
-    }
+    },
+    onLineChange: function(e: any) {
+
+      console.log('lineCount: ', e.detail);
+    },
 })

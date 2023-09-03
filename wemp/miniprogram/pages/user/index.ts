@@ -18,6 +18,18 @@ Component({
      * Component methods
      */
     methods: {
+      preview: function () {
+        wx.previewImage({
+          urls: [
+            `/assets/images/qrcode.png`
+          ]
+        })
+      },
 
+      home: function() {
+        wx.reLaunch({
+          url: `/pages/index/index`
+        })
+      }
     }
 })

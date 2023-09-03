@@ -1,8 +1,9 @@
 <!--pages/user/index.wxml-->
 <view class="container">
-    <view class="contact">
-        <view class="title">预定成功</view>
-        <image class="qrcode" src="" mode="center"></image>
-    </view>
-    <view class="txt">恭喜，您已成功预定 ""，请长按二维码添加客服</view>
+  <view class="contact">
+    <t-result theme="success" title="预定成功" />
+  </view>
+  <t-button size="large" theme="primary" variant="text" bind:tap="home">返回到首页</t-button>
+
+  <view class="txt">您已预定完成，请点击<span class="qrcode-txt" bind:tap="preview">二维码</span>链接添加客服</view>
 </view>

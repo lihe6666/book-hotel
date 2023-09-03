@@ -1,15 +1,25 @@
 {
-  "name": "wemp",
+  "name": "hongli-hotel",
   "version": "1.0.0",
-  "description": "",
+  "description": "宏利大酒店",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lihe6666/book-hotel.git"
+  },
+  "keywords": [
+    "hotel"
+  ],
+  "author": "Lion",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lihe6666/book-hotel/issues"
+  },
+  "homepage": "https://github.com/lihe6666/book-hotel#readme",
   "dependencies": {
-  },
-  "devDependencies": {
-    "miniprogram-api-typings": "^2.8.3-1"
+    "tdesign-miniprogram": "^1.2.2"
   }
 }

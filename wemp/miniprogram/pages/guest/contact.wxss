@@ -14,31 +14,11 @@ page {
     justify-content: space-evenly;
 }
 
-.form label {
-    width: 20%;
-    color: #333;
-
-
-    font-size: 14px;
+.container button {
+  width: 75%;
+  background-color: #17a586;
 }
 
-.form input {
-    width: 100%;
-    border-bottom: 1px solid #dedede;
-
-    font-size: 14px;
-}
-
-.name-wrapper, .date-wrapper, .cost-wrapper {
-    display: flex;
-    flex-direction: row;
-
-    margin: 0 0 15px 0;
-}
-
-.remark-wrapper textarea {
-    padding: 5px;
-    border-bottom: 1px solid #dedede;
-
-    font-size: 14px;
+.form {
+  width: 100%;
 }
