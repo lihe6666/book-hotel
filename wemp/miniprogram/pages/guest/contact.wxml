@@ -1,10 +1,26 @@
 <!--pages/contact.wxml-->
 <view class="container">
   <view class="form">
-    <t-input label="姓名" placeholder="请输入姓名"></t-input>
-    <t-input label="日期" placeholder="请选择日期"></t-input>
-    <t-input label="价格" placeholder="请选择价格"></t-input>
-    <t-textarea label="备注" placeholder="请输入备注" disableDefaultPadding="{{true}}" autosize="{{autosize}}" bind:line-change="onLineChange" />
+    <t-input label="姓名" placeholder="请输入姓名" model:value="{{ name }}" align="right" ></t-input>
+
+    <t-input label="日期" placeholder="请选择日期" disabled="disabled" bind:tap="onShowDatePicker" model:value="{{ dateText }}" align="right" ></t-input>
+
+    <!--
+    <t-cell title="选择日期" hover note="{{dateText || ''}}" arrow data-mode="date" bindtap="showPicker" class="test" t-class="panel-item" />
+    -->
+
+    <t-input label="价格" placeholder="请选择价格" model:value="{{ cost }}" bind:tap="onShowCostPicker" align="right" disabled="disabled">
+      <view slot="suffix" class="suffix">元</view>
+    </t-input>
+
+    <t-textarea label="备注" placeholder="请输入备注" disableDefaultPadding="{{true}}" autosize="{{ autosize }}" model:value="{{ remark }}" />
+
+    <t-date-time-picker title="选择日期" visible="{{ isDateVisible }}" mode="date" defaultValue="{{ date }}" format="YYYY-MM-DD" bindchange="onConfirm" bindpick="onColumnChange" bindcancel="onHideDatePicker" start="{{ start }}" end="{{ end }}" />
+
+    <t-picker visible="{{ isCostVisible }}" value="{{ arrCostList }}" title="选择价格" cancelBtn="取消" confirmBtn="确认" bindchange="onCostPickerChange" bindpick="onColumnChange" bindcancel="onPickerCancel">
+      <t-picker-item options="{{arrCostList}}" />
+    </t-picker>
+
   </view>
-  <button type="primary" bindtap="onSaveAction">预定</button>
+  <view class="btn" bindtap="onSaveAction">预定</view>
 </view>

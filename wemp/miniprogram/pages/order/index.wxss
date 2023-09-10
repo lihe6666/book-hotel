@@ -1,0 +1,91 @@
+/* pages/order/index.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: inherit;
+}
+
+.container .find {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.container .find .search-bar {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 450rpx;
+  position: absolute;
+  bottom: -450rpx;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.search-bar .row {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #EFEFEF;
+  padding: 0 10%;
+}
+
+.search-bar .row view {
+  font-size: 24rpx;
+}
+
+.search-bar .row view:first-child {
+  width: 30%;
+}
+
+.search-bar .row view:nth-child(2) {
+  width: 50%;
+}
+
+.search-bar .row view:last-child {
+  width: 125rpx;
+  height: 55rpx;
+  background-color: #17a586;
+  color: white;
+  text-align: center;
+  line-height: 55rpx;
+  margin: auto 0;
+}
+
+.container .preview {  
+  display: flex;
+  flex-direction: column;
+  
+  flex: 1;
+  padding: 50rpx 0;
+}
+
+.container .preview .row {
+  color: #666;
+  display: flex;
+  padding: 0 35rpx;
+  font-size: 24rpx;
+  justify-content: space-between;
+}
+
+.container .preview .row text{
+  padding: 20rpx 0;
+}
+
+.container .preview .row view {
+  height: 75rpx;
+  line-height: 75rpx;
+  width: 45%;
+}
+
+.container .preview .row:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+.container .preview .row view:last-child {
+  text-align: right;
+}

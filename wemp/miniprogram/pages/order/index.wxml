@@ -1,0 +1,47 @@
+<!--pages/order/index.wxml-->
+<view class="container">
+  <view class="find">
+    <t-input placeholder="请输入要查询的用户" tips="您可以输入手机号码或姓名" bindchange="onInputChange" bindclear="onInputClean" model:value="{{ text }}" clearable="{{ true }}" />
+    <view class="search-bar" wx:if="{{ hasSearchReply }}">
+      <view class="row" wx:for="{{ pSearchReply }}" wx:key="i">
+        <view class="name">姓名:{{ item.name }}</view>
+        <view class="mobile">手机:{{ item.mobile }}</view>
+        <view bind:tap="onSelectedSearch" data-key="{{ index }}">选择</view>
+      </view>
+    </view>
+  </view>
+  <view class="preview">
+    <view class="row">
+      <view>姓名: </view>
+      <view>{{ current.name }}</view>
+    </view>
+    <view class="row">
+      <view>手机: </view>
+      <view>{{ current.mobile }}</view>
+    </view>
+    <view class="row">
+      <view>套菜: </view>
+      <view>{{ current.cost }}</view>
+    </view>
+    <view class="row">
+      <view>价格: </view>
+      <view>{{ current.cost }}</view>
+    </view>
+    <view class="row">
+      <view>时间: </view>
+      <view>{{ current.created_at }}</view>
+    </view>
+    <view class="row">
+      <view>实价: </view>
+      <view>{{ current.realCost }}</view>
+    </view>
+    <view class="row">
+      <view>付款状态: </view>
+      <view>{{ current.paymentText }}</view>
+    </view>
+    <view class="row">
+      <view>备注: </view>
+      <text selectable="{{ true }}">{{ current.remark }}</text>
+    </view>
+  </view>
+</view>

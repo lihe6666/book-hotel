@@ -2,7 +2,8 @@
     "pages": [
         "pages/index/index",
         "pages/guest/contact",
-        "pages/user/index"
+        "pages/user/index",
+        "pages/order/index"
     ],
     "window": {
         "backgroundTextStyle": "light",

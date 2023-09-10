@@ -4,7 +4,6 @@ const app = getApp<IAppOption>()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -50,5 +49,10 @@ Page({
       wx.navigateTo({
           url: `/pages/guest/contact`
       })
+  },
+  toOrderPage: function () {
+    wx.navigateTo({
+      url: `/pages/order/index`
+    })
   }
 })
